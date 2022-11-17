@@ -1,5 +1,8 @@
+from ..game import *
+from ..report import *
 class UserDomain(object):
-    def __init__(self):
+    def __init__(self, id):
+        self.id = id
         pass
     def login(self, *args, **kwargs):
         pass
@@ -14,6 +17,9 @@ class UserDomain(object):
     def forgot(self, *args, **kwargs):
         pass
     def join(self, *args, **kwargs):
+        game_id = kwargs.get("game_id")
+        self.game = GameDomain(self.id, game_id)
+        self.game.join()
         pass
     def match(self, *args, **kwargs):
         pass
