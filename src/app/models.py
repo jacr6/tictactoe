@@ -180,8 +180,8 @@ class Session(models.Model):
         db_table = 'session'
 
 
-class User(models.Model):
+class Player(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'user'
+        db_table = 'player'

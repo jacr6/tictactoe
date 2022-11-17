@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "infra",
     "app",
-    # "domain" 
 ]
 
 MIDDLEWARE = [
@@ -86,7 +85,7 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
+    # or allow read-only access for unauthenticated players.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
