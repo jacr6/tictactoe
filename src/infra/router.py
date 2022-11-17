@@ -16,6 +16,10 @@ api = Api()
 
 api.urls=[
     
-    path(r'hello', UserPlatformList.as_view() )
+    path(r'hello', UserPlatformList.as_view() ),
+    path(r'join', UserPlatformList.as_view() ),
+    path(r'play', UserPlatformList.as_view() ),
+    path(r'quit', UserPlatformList.as_view() ),
+    path(r'list', UserPlatformList.as_view() ),
 ]
 api.urls = format_suffix_patterns(api.urls)

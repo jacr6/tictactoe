@@ -15,6 +15,6 @@ class UserPlatformList(APIView):
     def get(self, request, format=None):
         users = User.objects.all()
         serializer = PlatformSerializer
-        res = user.hello()
+        res = create_user().hello()
         res = {"res":res}
         return Response(res)
