@@ -1,4 +1,4 @@
-class CreditReport(object):
+class PlayerReport(object):
     """_summary_
 
     Args:
